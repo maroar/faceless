@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>CSS Drag & Drop</title>
+  <link rel="stylesheet" type="text/css" href="windows.css">
+</head>
+
+<body>
+  <div class="container" ondrop="dropContainer(event)" ondragover="allowDrop(event)" id="mainContainer">
+    <div class="addSlot" id="addNewSlot" onclick="addSlot()">
+      +
+    </div>
+  </div>
+  <div class="workspace">
+    <div class="window" draggable="true" ondragstart="drag(event)" onmousedown="dragMouseDown(event)" id="window1">
+    </div>
+  </div>
+</body>
+<script src="windows.js"></script>
+
+</html>

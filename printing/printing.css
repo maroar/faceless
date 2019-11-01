@@ -1,0 +1,29 @@
+.container {
+    display: table;
+}
+
+.divRed {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+
+.divBlue {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+}
+
+@media print  
+{
+    .divRed {
+        background-color: green;
+        page-break-inside: avoid;
+    }
+
+    .divBlue {
+        background-color: yellow;
+        page-break-inside: avoid;
+        
+    }
+}

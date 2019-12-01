@@ -1,0 +1,168 @@
+.container {
+    width: 200px;
+    animation-name: example3;
+    animation-duration: 2s;
+}
+
+@keyframes example3 {
+  from {width: 0px;}
+  to {width: 200px;}
+}
+
+.heatBar {
+    display: flex;
+    align-items: center;
+}
+
+.textoLimiteInferior {
+    grid-area: txt1;
+    margin-right: 2px;
+}
+
+.textoLimiteSuperior {
+    grid-area: txt2;
+    margin-left: 2px;
+}
+
+.grafico {
+    flex: 1;
+    grid-area: barras;
+    display: block;
+}
+
+.indicadores {
+    display: grid;
+    grid-template-areas: "bar";
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.barras {
+    grid-area: bar;
+    display: flex;
+    height: 22px;
+    padding: 2px 0px 2px 0px;
+}
+
+.barraVermelha {
+    background-color: #e9573e;
+    flex: 1;
+}
+
+.barraVermelhaAmarela {
+    background-image: linear-gradient(to right, #e9573e, #f2ca03);
+    flex: 1;
+}
+
+.barraAmarelaVerde {
+    background-image: linear-gradient(to right, #f2ca03, #95c11c);
+    flex: 1;
+}
+
+.indicador {
+    grid-area: bar;
+    display: flex;
+}
+
+.indicador2 {
+    position: relative;
+    grid-area: bar;
+    border: dashed;
+    border-width: 0px 1px 0px 0px;
+    border-color: #951a80;
+    width: 33%;
+    padding: 2px 0px 2px 0px;
+    animation-name: example2;
+    animation-duration: 4s;
+}
+
+@keyframes example2 {
+    from {width: 0%;}
+    to {width: 33%;}
+}
+
+.fontAbsoluta {
+    position: absolute;
+}
+
+.fontIndicador {
+    font-weight: bold;
+    font-family: "Open Sans";
+    font-size: 10px;
+}
+
+.fontIndicador2 {
+    left: calc(100% - 5px);
+    top: calc(100%);
+    color: #951a80;
+}
+
+.fontIndicadorBarraVertical {
+    left: calc(100% - 5px);
+    top: calc(100% - 40px);
+    color: #39434e;
+}
+
+.barraVertical {
+    position: relative;
+    border: solid;
+    border-width: 0px 1px 0px 0px;
+    border-right-width: 3px;
+    border-color: #39434e;
+    width: 20%;
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+@keyframes example {
+  from {width: 0%;}
+  to {width: 20%;}
+}
+
+.transparencia {
+    background-color: rgb(255, 255, 255, 0.8);
+    flex-grow: 1;
+}
+
+.grade {
+    display: flex;
+    height: 5px;
+    font-size: 5px;
+}
+
+.grade1 {
+    flex: 1;
+    text-align: left;
+}
+
+.grade2 {
+    flex: 1;
+    text-align: center;
+}
+
+.grade3 {
+    flex: 1;
+    text-align: right;
+}
+
+.texto {
+    display: flex;
+    flex-direction: row;
+    color: #868F9B;
+    font-family: "Open Sans";
+    font-size: 10px;
+}
+
+.textoItem1 {
+    flex: 1;
+}
+
+.textoItem2 {
+    flex: 1;
+    text-align: center;
+}
+
+.textoItem4 {
+    flex: 1;
+    text-align: right;
+}
